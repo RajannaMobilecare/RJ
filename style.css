@@ -1,0 +1,112 @@
+/* General body styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+}
+
+/* Header section */
+header {
+  background-color: #d71b1b;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Sections */
+section {
+  padding: 20px;
+}
+
+h2 {
+  color: #d71b1b;
+}
+
+/* Product cards */
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.product {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  width: 200px;
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+}
+
+/* Visiting Card */
+.visiting-card {
+  width: 90%;
+  max-width: 600px;
+  display: block;
+  margin: 15px auto;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+}
+
+/* Gallery section */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: start;
+}
+
+.gallery-img {
+  width: 300px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+/* Links */
+a {
+  color: #00ffcc;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .products, .gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product, .gallery-img {
+    width: 90%;
+  }
+
+  nav {
+    text-align: center;
+  }
+}
