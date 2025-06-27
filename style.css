@@ -1,3 +1,10 @@
+/* Logo */
+.logo {
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
 /* General body styles */
 body {
   font-family: Arial, sans-serif;
