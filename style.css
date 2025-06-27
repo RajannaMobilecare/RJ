@@ -1,10 +1,3 @@
-/* Logo */
-.logo {
-  width: 60px;
-  height: 60px;
-  margin-bottom: 10px;
-}
-
 /* General body styles */
 body {
   font-family: Arial, sans-serif;
@@ -13,12 +6,27 @@ body {
   background: #f9f9f9;
 }
 
-/* Header section */
+/* Header with logo on left and text/menu on right */
 header {
   background-color: #d71b1b;
   color: white;
   padding: 20px;
-  text-align: center;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.header-text {
+  flex: 1;
 }
 
 nav {
@@ -27,7 +35,7 @@ nav {
 
 nav a {
   color: white;
-  margin: 0 10px;
+  margin-right: 10px;
   text-decoration: none;
   font-weight: bold;
 }
@@ -36,7 +44,7 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* Sections */
+/* Section styles */
 section {
   padding: 20px;
 }
@@ -99,7 +107,7 @@ footer {
 
 /* Links */
 a {
-  color: #101D6B;
+  color: #00ffcc;
 }
 
 /* Responsive Design */
@@ -113,7 +121,14 @@ a {
     width: 90%;
   }
 
-  nav {
+  .header-container {
+    flex-direction: column;
+    align-items: center;
     text-align: center;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+    margin-right: 0;
   }
 }
